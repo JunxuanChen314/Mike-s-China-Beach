@@ -203,3 +203,37 @@ nav {
     height: auto;
   }
 }
+
+@media (max-width: 768px) {
+  nav {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: transparent;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+}
