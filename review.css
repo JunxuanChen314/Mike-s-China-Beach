@@ -1,0 +1,99 @@
+body{
+	background-color: antiquewhite;
+}
+
+header a {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #7b3f00; 
+  text-decoration: none;
+  margin: 16px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  transform: scale(1.1); 
+}
+
+.reviews-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reviews-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #b85c38;
+}
+
+.reviews-section .subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.reviews-section h2 {
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 6px;
+}
+
+.review-card {
+  background-color: #fff9f2;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.review-avatar {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #eee;
+  background-size: cover;
+  background-position: center;
+}
+
+.review-content {
+  flex: 1;
+}
+
+.review-content .stars {
+  color: #f7b500;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.review-content .quote {
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.review-content .author {
+  font-weight: bold;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  text-align: right;
+}

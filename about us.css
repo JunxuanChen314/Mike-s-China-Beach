@@ -1,0 +1,162 @@
+body{
+	background-color: antiquewhite;
+}
+
+
+header a {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #7b3f00; 
+  text-decoration: none;
+  margin: 16px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  transform: scale(1.1); 
+}
+
+.overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: linear-gradient(90deg, #a86c1d, #4e2900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1.2s ease-out forwards;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #b85c38;
+  margin-bottom: 0.4em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #333333;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 1.2em;
+  text-align: justify;
+}
+
+.location-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 40px 20px;
+}
+
+.location-section .info {
+  max-width: 400px;
+}
+
+.map-container iframe {
+  width: 300px;
+  height: 300px;
+}
+
+.map-button {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #b85c38;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.map-button:hover {
+  background-color: #a14d2e;
+}
+
+.order-info {
+  background-color: #fff9ec;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  margin: 40px auto;
+  max-width: 750px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order-info h2 {
+  font-size: 28px;
+  color: #c25400;
+  margin-bottom: 20px;
+}
+
+.order-buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.order-link {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.order-link.phone {
+  background-color: #2e86de;
+}
+
+.order-link.uber {
+  background-color: #05a357;
+}
+
+.order-link.doordash {
+  background-color: #e53935;
+}
+
+.order-link.beyond {
+  background-color: #8e44ad;
+}
+
+.order-link:hover {
+  opacity: 0.9;
+}
